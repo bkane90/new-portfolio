@@ -13,7 +13,7 @@ function Footer() {
                         Robert Kane, Jr.
                     </Col>
                     <Col className="p-0 d-flex justify-content-end" md={3}>
-                        This site was made by Robert Kane, Jr.
+                        This site was built by Robert Kane, Jr.
                     </Col>
                 </Row>
             </Container>
