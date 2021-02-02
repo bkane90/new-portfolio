@@ -3,7 +3,7 @@ import React from 'react';
 function AboutPage(props) {
 
     return (
-        <p>This is the About Page</p>
+        <p>My About Page</p>
     );
 
 }
