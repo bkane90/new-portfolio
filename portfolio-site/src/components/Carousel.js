@@ -39,7 +39,7 @@ class Carousel extends React.Component {
                     imgSrc: BezosBot,
                     link: 'https://Bezos-domination-game.netlify.app/',
                     selected: false
-                }
+                },
             ]
         }
     }
