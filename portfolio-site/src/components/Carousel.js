@@ -1,14 +1,12 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 
 import Card from '../components/Card';
 
 import CryptopediaLogo from '../assets/images/CryptopediaLogo.png';
 import Tesla from '../assets/images/Tesla.png';
 import BezosBot from '../assets/images/BezosBot.png';
-
-//use images 1000 x 1600
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 class Carousel extends React.Component {
 
@@ -26,8 +24,8 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 1,
-                    title: 'Nikola Tesla API',
-                    subTitle: 'Nikola Tesla Storm Tracker',
+                    title: 'Nikola Tesla Storm Tracker',
+                    subTitle: 'Track Storms using Google Maps API',
                     imgSrc: Tesla,
                     link: 'https://Nikola-Tesla-electric.netlify.app/',
                     selected: false
@@ -43,6 +41,7 @@ class Carousel extends React.Component {
             ]
         }
     }
+
 
     handleCardClick = (id, card) => {
 
@@ -61,22 +60,24 @@ class Carousel extends React.Component {
         });
     }
 
+
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} click={(e => this.handleCardClick(items.id, e))} key={item.id} />
+            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
         })
     }
+
 
     render() {
         return (
             <Container fluid={true}>
-                <Row className='justify-content-around'>
+                <Row className="justify-content-around">
                     {this.makeItems(this.state.items)}
                 </Row>
-
             </Container>
         );
     }
+
 }
 
 export default Carousel;
