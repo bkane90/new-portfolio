@@ -9,8 +9,9 @@ function AboutPage(props) {
     return (
         <div>
             <Hero title={props.title} />
-
+            {/* <img src={MyPhoto} className='MyPhoto' alt='My Photo' /> */}
             <Content>
+
                 <p>Hey there! I'm Bob Kane, a full-stack web developer with a background in finance and marketing. As an Ironhack graduate, I'm most familar with the technologies used in the MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
 
                 <p>Critical thinking and problem solving are in my nature, so it's fitting that I can fully integrate those skills into my career through coding. I'm very solutions-oriented, and I instinctively try to understand why and how things work the way they do. </p>
