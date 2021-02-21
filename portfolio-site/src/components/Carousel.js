@@ -8,6 +8,8 @@ import BezosBot from '../assets/images/BezosBot.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
+// 1000px x 1600px
+
 class Carousel extends React.Component {
 
     constructor(props) {
