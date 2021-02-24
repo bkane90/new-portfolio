@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Content from '../components/Content';
 
-import MyPhoto from '../assets/images/MyPhoto.png';
+// import MyPhoto from '../assets/images/MyPhoto.png';
 
 function AboutPage(props) {
 
