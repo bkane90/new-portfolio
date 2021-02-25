@@ -23,11 +23,11 @@ app.get('/api', (req, res, next) => {
 });
 
 app.post('/api/email', (req, res, next) => {
-    sendGrid.setApiKey('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');
+    sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
         to: 'bkane90@gmail.com',
         from: req.body.email,
-        subject: 'Website Contact',
+        subject: 'Portfolio Site Contact',
         text: req.body.message
     }
 
@@ -45,4 +45,6 @@ app.post('/api/email', (req, res, next) => {
         });
 });
 
-app.listen(3030, '0.0.0.0');
+app.listen(process.env.PORT, () => {
+    console.log('Listening!');
+})
