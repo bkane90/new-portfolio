@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
@@ -45,6 +46,8 @@ app.post('/api/email', (req, res, next) => {
         });
 });
 
-app.listen(process.env.PORT, () => {
-    console.log('Listening!');
-})
+app.listen(3030, '0.0.0.0');
+
+// app.listen(process.env.PORT, () => {
+//     console.log('Listening!');
+// })
