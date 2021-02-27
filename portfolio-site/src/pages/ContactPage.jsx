@@ -33,6 +33,8 @@ class ContactPage extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
+        console.log(event.target);
+
         this.setState({
             disabled: true
         });
@@ -42,16 +44,18 @@ class ContactPage extends React.Component {
                 if (res.data.success) {
                     this.setState({
                         disabled: false,
-                        emailSent: false
+                        emailSent: true
                     });
                 } else {
                     this.setState({
                         disabled: false,
-                        emailSent: true
+                        emailSent: false
                     })
                 }
             })
             .catch(err => {
+                console.log(err);
+
                 this.setState({
                     disabled: false,
                     emailSent: false
