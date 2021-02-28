@@ -1,11 +1,12 @@
 import React from 'react';
+import Axios from 'axios';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 import Hero from '../components/Hero';
 import Content from '../components/Content';
-import Axios from 'axios';
+
 
 class ContactPage extends React.Component {
 
@@ -69,7 +70,7 @@ class ContactPage extends React.Component {
                 <Hero title={this.props.title} />
 
                 <Content>
-                    <Form onSubmit={this.handleSubmit}>
+                    <Form className='py-5' onSubmit={this.handleSubmit}>
                         <Form.Group>
                             <Form.Label htmlFor="full-name">Full Name</Form.Label>
                             <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
@@ -85,7 +86,7 @@ class ContactPage extends React.Component {
                             <Form.Control id="message" name="message" as="textarea" rows="3" value={this.state.message} onChange={this.handleChange} />
                         </Form.Group>
 
-                        <Button className="d-inline-block" variant="primary" type="submit" disabled={this.state.disabled}>
+                        <Button className="d-inline-block border border-2 mr-3" variant="primary" type="submit" disabled={this.state.disabled}>
                             Send
                         </Button>
 
