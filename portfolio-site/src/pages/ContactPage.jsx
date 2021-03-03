@@ -70,7 +70,7 @@ class ContactPage extends React.Component {
                 <Hero title={this.props.title} />
 
                 <Content>
-                    <Form className='py-5' onSubmit={this.handleSubmit}>
+                    <Form className='py-5 my-5' onSubmit={this.handleSubmit}>
                         <Form.Group>
                             <Form.Label htmlFor="full-name">Full Name</Form.Label>
                             <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
