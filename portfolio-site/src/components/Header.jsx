@@ -19,8 +19,8 @@ class Header extends React.Component {
                 { title: 'Contact', path: '/contact' },
             ],
             home: {
-                title: 'Strive for Greatness',
-                subTitle: 'Contribute to the World',
+                title: 'Dare to be Different',
+                subTitle: 'Strive for Excellence',
                 text: 'Check out my work below'
             },
             about: {

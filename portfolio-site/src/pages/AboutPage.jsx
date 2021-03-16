@@ -26,7 +26,7 @@ function AboutPage(props) {
 
                         <p> As a student of life, I'm deeply passionate about self-improvement and have an insatisable appetite for learning. In my neverending quest for knowledge, I'm always seeking to better myself and continually learn new things in all aspects of life. In terms of web development, these qualities allow me to push the limitations of my current capabilities while always striving to become a better programmer.</p>
 
-                        <p>When I'm not busy coding, you can usually find me enjoying some of my favorite hobbies. These include meditation, yoga, weight-training, reading, snowboarding, DJing, cooking, fishing, and traveling. Besides programming languages, I'm also currently learning how to speak Spanish. Eventually I strive to be bilingual and add that to my already dynamic skillset.</p>
+                        <p>When I'm not busy coding, you can usually find me enjoying some of my favorite hobbies. These include reading, meditation, yoga, weight-training, snowboarding, DJing, cooking, fishing, and traveling. Besides programming languages, I'm also currently learning how to speak Spanish. Eventually I strive to be bilingual and add that to my already dynamic skillset.</p>
                     </Content>
                 </Row>
             </Container>
