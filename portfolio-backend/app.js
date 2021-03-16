@@ -46,8 +46,8 @@ app.post('/api/email', (req, res, next) => {
         });
 });
 
-app.listen(3030, '0.0.0.0');
+// app.listen(3030, '0.0.0.0');
 
-// app.listen(process.env.PORT, () => {
-//     console.log('Listening!');
-// })
+app.listen(process.env.PORT, () => {
+    console.log('Listening!');
+})
