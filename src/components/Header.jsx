@@ -21,7 +21,7 @@ class Header extends React.Component {
             home: {
                 title: 'Dare to be Different',
                 subTitle: 'Strive for Excellence',
-                text: 'Check out my work below'
+                text: 'Check out my projects below'
             },
             about: {
                 title: 'About Me',
