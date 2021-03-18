@@ -24,7 +24,7 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 1,
-                    title: 'Nikola Tesla Influencer Site',
+                    title: 'Nikola Tesla Electrical Storm Tracker',
                     subTitle: 'Track Storms using Google Maps API',
                     imgSrc: Tesla,
                     link: 'https://Nikola-Tesla-electric.netlify.app/',
