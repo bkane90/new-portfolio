@@ -17,7 +17,7 @@ function AboutPage(props) {
             <Container fluid={true}>
                 <Row className="justify-content-center p-0">
 
-                    <img src={MyPhoto} className='MyPhoto pb-5' alt='Me' />
+                    <img src={MyPhoto} className='pb-5 mb-3 m-0' alt='Me' />
 
                     <Content>
                         <p>Hey there! I'm Bob Kane, a full-stack web developer based out of Brooklyn, NY with a background in finance and marketing.
