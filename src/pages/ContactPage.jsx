@@ -40,7 +40,7 @@ class ContactPage extends React.Component {
             disabled: true
         });
 
-        Axios.post('api/email', this.state)
+        Axios.post('https://robertkanejr.netlify.app/api/email', this.state)
             .then(res => {
                 if (res.data.success) {
                     this.setState({
@@ -97,7 +97,9 @@ class ContactPage extends React.Component {
             </div>
         );
     }
-
+    // resetForm(){
+    //     document.getElementById(Form).reset();
+    // }
 }
 
 export default ContactPage;

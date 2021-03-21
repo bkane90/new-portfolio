@@ -1,18 +1,65 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 import background from './assets/images/BackgroundImage.png'
 
-import Header from './components/Header';
 import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div style={{ backgroundImage: `url(${background})`, height: 'auto', width: '100%' }}>
-      <Header />
-      <Footer />
-    </div>
-  );
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: 'Robert Kane, Jr.',
+      headerLinks: [
+        { title: 'Home', path: '/' },
+        { title: 'About', path: '/about' },
+        { title: 'Contact', path: '/contact' },
+      ],
+      home: {
+        title: 'DARE TO BE DIFFERENT',
+        subTitle: 'Strive for Excellence',
+        text: 'Check out my projects below'
+      },
+      about: {
+        title: 'About Me',
+      },
+      contact: {
+        title: 'Let\'s Talk',
+      }
+    }
+  }
+  render() {
+    return (
+      <Router>
+        <Container className="p-0 color:white" fluid={true} style={{ backgroundImage: `url(${background})`, height: 'auto', width: '100%' }}>
+          <Navbar className="border-bottom" bg="light" variant="light" expand="lg" sticky="top" >
+            <Navbar.Brand>Robert Kane, Jr.</Navbar.Brand>
+            <Navbar.Toggle className="border-0" aria-controls="hamburger-menu" />
+            <Navbar.Collapse id="hamburger-menu">
+              <Nav className="ml-auto">
+                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/contact">Contact</Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
+          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Footer />
+        </Container>
+      </Router>
+    )
+  }
 }
+
 
 export default App;

@@ -32,7 +32,7 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 2,
-                    title: 'Bezos Takes Over the World (Again)',
+                    title: 'Bezos World Domination Game',
                     subTitle: 'Futuristic Shooter Game',
                     imgSrc: BezosBot,
                     link: 'https://Bezos-domination-game.netlify.app/',
