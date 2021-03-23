@@ -40,7 +40,7 @@ code {
   padding: 10px 15px;
 }
 
-.success-err {
-  color:#EE6352;
+.err-msg {
+  color:#f33b23;
   padding: 10px 15px;
 }

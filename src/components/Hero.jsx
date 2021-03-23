@@ -15,7 +15,6 @@ function Hero(props) {
                         {props.subTitle && <h3 className="display-4 font-weight-light">{props.subTitle}</h3>}
                         {props.text && <h3 className="font-weight-light">{props.text}</h3>}
                     </Col>
-
                 </Row>
             </Container>
         </Jumbotron>
