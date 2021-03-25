@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '../components/Card';
+import Card from './Card';
 
 import CryptopediaLogo from '../assets/images/CryptopediaLogo.png';
 import Tesla from '../assets/images/Tesla.png';

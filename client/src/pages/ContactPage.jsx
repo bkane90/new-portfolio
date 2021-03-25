@@ -1,5 +1,5 @@
 import React from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -40,7 +40,7 @@ class ContactPage extends React.Component {
             disabled: true
         });
 
-        Axios.post('http://localhost:5000/api/email', this.state)
+        axios.post('/sendtome', this.state)
             .then(res => {
                 if (res.data.success) {
                     this.setState({
