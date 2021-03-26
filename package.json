@@ -47,14 +47,14 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bkane90/portfolio-site.git"
+    "url": "git+https://github.com/robertkanejr/portfolio-site.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bkane90/portfolio-site/issues"
+    "url": "https://github.com/robertkanejr/portfolio-site/issues"
   },
-  "homepage": "https://github.com/bkane90/portfolio-site#readme",
+  "homepage": "https://github.com/robertkanejr/portfolio-site#readme",
   "description": ""
 }
