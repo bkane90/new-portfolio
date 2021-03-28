@@ -8,7 +8,7 @@ const port = 4444;
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.use('/sendtome', require('./routes/sendToMe'));
+app.use('/email', require('./routes/sendToMe'));
 
 
 app.listen(port, () => {

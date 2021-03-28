@@ -40,7 +40,7 @@ class ContactPage extends React.Component {
             disabled: true
         });
 
-        axios.post('/sendtome', this.state)
+        axios.post('/email', this.state)
             .then(res => {
                 if (res.data.success) {
                     this.setState({
@@ -90,8 +90,8 @@ class ContactPage extends React.Component {
                             Send
                         </Button>
 
-                        {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
-                        {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
+                        {/* {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
+                        {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>} */}
                     </Form>
                 </Content>
             </div>
