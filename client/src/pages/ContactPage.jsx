@@ -70,7 +70,7 @@ class ContactPage extends React.Component {
                 <Hero title={this.props.title} />
 
                 <Content>
-                    <Form className='py-5 my-5 px-0 mx-0' onSubmit={this.handleSubmit}>
+                    <Form className='py-5 my-5 px-0 mx-0'>
                         <Form.Group>
                             <Form.Label htmlFor="full-name">Full Name</Form.Label>
                             <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
@@ -86,7 +86,7 @@ class ContactPage extends React.Component {
                             <Form.Control id="message" name="message" as="textarea" rows="3" value={this.state.message} onChange={this.handleChange} />
                         </Form.Group>
 
-                        <Button className="d-inline-block border border-2 mr-3" variant="primary" type="submit" disabled={this.state.disabled}>
+                        <Button className="d-inline-block border border-2 mr-3" variant="primary" type="submit" onClick={this.handleSubmit}>
                             Send
                         </Button>
 

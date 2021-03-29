@@ -23,12 +23,16 @@ transporter.verify((error, success) => {
     }
 });
 
+// sendToMeRouter.get('/', (req, res, next) => {
+//     res.send('API Status: Running')
+// });
+
 sendToMeRouter.post('/', (req, res, next) => {
     const mail = {
         from: req.body.email,
         to: process.env.EMAIL,
         subject: 'Portfolio Site Contact',
-        text: req.body.message
+        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
     }
     transporter.sendMail(mail, (err, data) => {
         if (err) {
@@ -40,7 +44,15 @@ sendToMeRouter.post('/', (req, res, next) => {
                 status: 'success'
             })
         }
-    })
+    });
+    // transporter.sendMail(mail, (err, res) => {
+    //     if (error) {
+    //       res.render('contact-failure') // Show a page indicating failure
+    //     }
+    //     else {
+    //       res.render('contact-success') // Show a page indicating success
+    //     }
+    // })
 });
 
 module.exports = sendToMeRouter;
