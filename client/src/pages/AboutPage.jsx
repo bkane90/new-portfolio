@@ -27,7 +27,7 @@ function AboutPage(props) {
                         I'm very solutions-oriented, and I instinctively try to understand why and how things work the way they do.
                         I'm also a highly effective communicator, making collobration with coworkers and clients effortless.</p>
 
-                        <p> As a student of life, I'm deeply passionate about self-improvement and have an insatisable appetite for learning.
+                        <p> As a student of life, I'm deeply passionate about self-improvement and have an insatiable appetite for learning.
                         In my neverending quest for knowledge, I'm always seeking to better myself and continually learn new things in all aspects of life.
                         In terms of web development, these qualities allow me to push the limitations of my current capabilities while always striving to become a better programmer.</p>
 
