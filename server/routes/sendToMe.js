@@ -45,14 +45,14 @@ sendToMeRouter.post('/', (req, res, next) => {
             })
         }
     });
-    // transporter.sendMail(mail, (err, res) => {
-    //     if (error) {
-    //       res.render('contact-failure') // Show a page indicating failure
-    //     }
-    //     else {
-    //       res.render('contact-success') // Show a page indicating success
-    //     }
-    // })
+    transporter.sendMail(mail, (err, res) => {
+        if (error) {
+            res.render('contact-failure') // Show a page indicating failure
+        }
+        else {
+            res.render('contact-success') // Show a page indicating success
+        }
+    })
 });
 
 module.exports = sendToMeRouter;
