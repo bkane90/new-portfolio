@@ -34,6 +34,7 @@ sendToMeRouter.post('/', (req, res, next) => {
         subject: 'Portfolio Site Contact',
         text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
     }
+
     transporter.sendMail(mail, (err, data) => {
         if (err) {
             res.json({
@@ -45,14 +46,14 @@ sendToMeRouter.post('/', (req, res, next) => {
             })
         }
     });
-    transporter.sendMail(mail, (err, res) => {
-        if (error) {
-            res.render('contact-failure') // Show a page indicating failure
-        }
-        else {
-            res.render('contact-success') // Show a page indicating success
-        }
-    })
+    // transporter.sendMail(mail, (error, res) => {
+    //     if (error) {
+    //         res.render('contact-failure') // Show a page indicating failure
+    //     }
+    //     else {
+    //         res.render('contact-success') // Show a page indicating success
+    //     }
+    // })
 });
 
 module.exports = sendToMeRouter;

@@ -97,7 +97,7 @@ class ContactPage extends React.Component {
             </div>
         );
     }
-    // resetForm(){
+    // resetForm() {
     //     document.getElementById(Form).reset();
     // }
 }
