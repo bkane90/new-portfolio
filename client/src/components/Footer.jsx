@@ -2,9 +2,10 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import 'boxicons/css/boxicons.css';
 
-// import LinkedIn from '../assets/images/LinkedInIcon.png';
-// import GitHub from '../assets/images/GitHubIcon.png';
+
+
 
 function Footer() {
 
@@ -16,13 +17,12 @@ function Footer() {
                         Robert Kane, Jr. © 2021
                     </Col>
                     {/* <Col className="p-0 d-flex" md={3} sm={12}>
-                        <img src={LinkedIn} alt='LinkedIn Icon' />
+                        <box-icon type='logo' color='blue' name='linkedin-square'></box-icon>
                     </Col>
                     <Col className="p-0 d-flex" md={3} sm={12}>
-                        <img src={GitHub} alt='GitHub Icon' />
-                    </Col> */}
-                    {/* <Col className="p-0 d-flex justify-content-end" md={3} sm={12}>
-                        
+                        <box-icon type='logo' name='github'></box-icon>
+                    </Col>
+                    <Col className="p-0 d-flex justify-content-end" md={3} sm={12}>
                     </Col> */}
                 </Row>
             </Container>
