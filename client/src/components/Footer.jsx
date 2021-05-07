@@ -16,14 +16,6 @@ function Footer() {
                     <Col className="p-0 d-flex justify-content-center">
                         Robert Kane, Jr. © 2021
                     </Col>
-                    {/* <Col className="p-0 d-flex" md={3} sm={12}>
-                        <box-icon type='logo' color='blue' name='linkedin-square'></box-icon>
-                    </Col>
-                    <Col className="p-0 d-flex" md={3} sm={12}>
-                        <box-icon type='logo' name='github'></box-icon>
-                    </Col>
-                    <Col className="p-0 d-flex justify-content-end" md={3} sm={12}>
-                    </Col> */}
                 </Row>
             </Container>
         </footer>
