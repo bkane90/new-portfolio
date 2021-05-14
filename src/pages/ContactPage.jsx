@@ -15,9 +15,7 @@ class ContactPage extends React.Component {
         this.state = {
             name: '',
             email: '',
-            message: '',
-            disabled: false,
-            emailSent: null,
+            message: ''
         }
     }
 
@@ -34,34 +32,9 @@ class ContactPage extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        console.log(event.target);
-
-        this.setState({
-            disabled: true
-        });
-
-        axios.post('https://us-central1-mycontactform-bb717.cloudfunctions.net/sendMail', this.state)
-            .then(res => {
-                if (res.data.success) {
-                    this.setState({
-                        disabled: false,
-                        emailSent: true
-                    });
-                } else {
-                    this.setState({
-                        disabled: false,
-                        emailSent: false
-                    })
-                }
-            })
-            .catch(err => {
-                console.log(err);
-
-                this.setState({
-                    disabled: false,
-                    emailSent: false
-                });
-            })
+        axios.get(`https://us-central1-mycontactform-bb717.cloudfunctions.net/sendMail?name=${this.state.name}&email=${this.state.email}&message=${this.state.message}`)
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
     }
 
     render() {
