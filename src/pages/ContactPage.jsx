@@ -32,7 +32,7 @@ class ContactPage extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        axios.get(`https://us-central1-mycontactform-bb717.cloudfunctions.net/sendMail?name=${this.state.name}&email=${this.state.email}&message=${this.state.message}`)
+        axios.post(`https://us-central1-mycontactform-bb717.cloudfunctions.net/sendMail`, this.state)
             .then(res => console.log(res))
             .catch(err => console.log(err))
     }
