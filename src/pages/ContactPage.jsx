@@ -33,8 +33,11 @@ class ContactPage extends React.Component {
         event.preventDefault();
 
         Axios.post('https://rck-portfolio-backend.herokuapp.com/contact', this.state)
-            .then(res => console.log(res))
+            .then(res => {
+                return window.location.href = '/'
+            })
             .catch(err => console.log(err))
+
     }
 
     render() {
@@ -70,9 +73,6 @@ class ContactPage extends React.Component {
             </div>
         );
     }
-    // resetForm() {
-    //     document.getElementById(Form).reset();
-    // }
 }
 
 export default ContactPage;
