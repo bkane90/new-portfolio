@@ -43,7 +43,7 @@ class ContactPage extends React.Component {
         //     .then(res => console.log(res))
         //     .catch(err => console.log(err))
 
-        Axios.post('/contact', this.state)
+        Axios.post('https://rck-portfolio-backend.herokuapp.com/contact', this.state)
             .then(res => {
                 if (res.data.success) {
                     this.setState({
