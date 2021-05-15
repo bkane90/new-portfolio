@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -15,7 +15,9 @@ class ContactPage extends React.Component {
         this.state = {
             name: '',
             email: '',
-            message: ''
+            message: '',
+            disabled: false,
+            emaiSent: null,
         }
     }
 
@@ -32,9 +34,37 @@ class ContactPage extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        axios.post("/contact", this.state)
-            .then(res => console.log(res))
-            .catch(err => console.log(err))
+        this.setState({
+            disabled: true
+            // emailSent: true
+        });
+
+        // Axios.post("/contact", this.state)
+        //     .then(res => console.log(res))
+        //     .catch(err => console.log(err))
+
+        Axios.post('/contact', this.state)
+            .then(res => {
+                if (res.data.success) {
+                    this.setState({
+                        disabled: false,
+                        emailSent: true
+                    });
+                } else {
+                    this.setState({
+                        disabled: false,
+                        emailSent: false
+                    });
+                }
+            })
+            .catch(err => {
+                console.log(err);
+
+                this.setState({
+                    disabled: false,
+                    emailSent: false
+                });
+            })
     }
 
     render() {
@@ -63,8 +93,8 @@ class ContactPage extends React.Component {
                             Send
                         </Button>
 
-                        {/* {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
-                        {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>} */}
+                        {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
+                        {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
                     </Form>
                 </Content>
             </div>
