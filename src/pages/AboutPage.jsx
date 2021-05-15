@@ -21,7 +21,8 @@ function AboutPage(props) {
 
                     <Content>
                         <p>Hey there! I'm Bob Kane, a full-stack web developer based out of Brooklyn, NY with a background in finance and marketing.
-                        As a recent Ironhack bootcamp graduate, I'm most familar with the technologies used in the MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
+                        I'm currently working as a freelance web developer while I pursue my next full-time role. As an Ironhack bootcamp graduate,
+                        I'm most familar with the technologies used in the MERN stack (MongoDB, Express, React, Node.js) as well as JavaScript, HTML, CSS, and Wordpress. </p>
 
                         <p>Critical thinking and problem solving are in my nature, so it's fitting that I can fully integrate those skills into my career through coding.
                         I'm very solutions-oriented, and I instinctively try to understand why and how things work the way they do.
@@ -33,9 +34,8 @@ function AboutPage(props) {
 
                         <p>Besides programming and self-improvement, I'm also immensely dedicated to health, fitness, and mindfulness.
                         When I'm not busy coding, you can usually find me enjoying some of my favorite hobbies.
-                        These include reading, meditation, yoga, weight-training, snowboarding, fishing, cooking, traveling, DJing, and solving jigsaw puzzles.
-                        Besides programming languages, I'm also currently learning how to speak Spanish.
-                        Eventually I strive to be bilingual and add that to my already dynamic skillset.</p>
+                        These include reading, meditation, yoga, exercise, snowboarding, fishing, cooking, traveling, DJing, and solving jigsaw puzzles.
+                        Besides programming languages, I'm also currently learning how to speak Spanish. Eventually I strive to be bilingual and add that to my already dynamic skillset.</p>
                     </Content>
                 </Row>
             </Container>
