@@ -16,8 +16,6 @@ class ContactPage extends React.Component {
             name: '',
             email: '',
             message: '',
-            disabled: false,
-            emaiSent: null,
         }
     }
 
@@ -34,37 +32,9 @@ class ContactPage extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        this.setState({
-            disabled: true
-            // emailSent: true
-        });
-
-        // Axios.post("/contact", this.state)
-        //     .then(res => console.log(res))
-        //     .catch(err => console.log(err))
-
         Axios.post('https://rck-portfolio-backend.herokuapp.com/contact', this.state)
-            .then(res => {
-                if (res.data.success) {
-                    this.setState({
-                        disabled: false,
-                        emailSent: true
-                    });
-                } else {
-                    this.setState({
-                        disabled: false,
-                        emailSent: false
-                    });
-                }
-            })
-            .catch(err => {
-                console.log(err);
-
-                this.setState({
-                    disabled: false,
-                    emailSent: false
-                });
-            })
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
     }
 
     render() {
