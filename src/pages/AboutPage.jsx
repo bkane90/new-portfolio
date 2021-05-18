@@ -34,7 +34,7 @@ function AboutPage(props) {
 
                         <p>Besides programming and self-improvement, I'm also immensely dedicated to health, fitness, and mindfulness.
                         When I'm not busy coding, you can usually find me enjoying some of my favorite hobbies.
-                        These include reading, meditation, yoga, exercise, snowboarding, fishing, cooking, traveling, DJing, and solving jigsaw puzzles.
+                        These include reading, meditation, yoga, exercise, snowboarding, DJing, fishing, cooking, traveling, and solving jigsaw puzzles.
                         Besides programming languages, I'm also currently learning how to speak Spanish. Eventually I strive to be bilingual and add that to my already dynamic skillset.</p>
                     </Content>
                 </Row>
