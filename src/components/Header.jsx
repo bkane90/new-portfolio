@@ -13,11 +13,6 @@ class Header extends React.Component {
         super(props);
         this.state = {
             title: 'Robert Kane, Jr.',
-            // headerLinks: [
-            //     { title: 'Home', path: '/' },
-            //     { title: 'About', path: '/about' },
-            //     { title: 'Contact', path: '/contact' },
-            // ],
             home: {
                 title: 'DARE TO BE DIFFERENT',
                 subTitle: 'Strive for Excellence',

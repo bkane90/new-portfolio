@@ -4,6 +4,7 @@ import Card from './Card';
 
 import NRLogo from '../assets/images/NRLogo.png';
 import BILogo from '../assets/images/BILogo.jpg';
+import DHLogo from '../assets/images/DHLogo.jpg';
 import CryptopediaLogo from '../assets/images/CryptopediaLogo.png';
 import Tesla from '../assets/images/Tesla.png';
 import BezosBot from '../assets/images/BezosBot.png';
@@ -21,7 +22,7 @@ class Carousel extends React.Component {
                     title: 'New Remedies',
                     subTitle: 'First & Only Federally Compliant CBD Franchise',
                     imgSrc: NRLogo,
-                    link: 'https://newremediescbd.com/?v=f24485ae434a',
+                    link: 'https://newremediescbd.com/',
                     selected: false
                 },
                 {
@@ -34,6 +35,14 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 2,
+                    title: 'Dailee Holdings LLC.',
+                    subTitle: 'Compliant Solutions for the Cannabinoid Industry',
+                    imgSrc: DHLogo,
+                    link: 'https://daileecbd.com/',
+                    selected: false
+                },
+                {
+                    id: 3,
                     title: 'Cryptopedia',
                     subTitle: 'Cryptocurrency Trading Simulator',
                     imgSrc: CryptopediaLogo,
@@ -41,7 +50,7 @@ class Carousel extends React.Component {
                     selected: false
                 },
                 {
-                    id: 3,
+                    id: 4,
                     title: 'Nikola Tesla Electrical Storm Tracker',
                     subTitle: 'Track Storms Using Google Maps API',
                     imgSrc: Tesla,
@@ -49,7 +58,7 @@ class Carousel extends React.Component {
                     selected: false
                 },
                 {
-                    id: 4,
+                    id: 5,
                     title: 'Bezos World Domination Game',
                     subTitle: 'Futuristic Shooter Game',
                     imgSrc: BezosBot,
@@ -84,7 +93,6 @@ class Carousel extends React.Component {
             return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
         })
     }
-
 
     render() {
         return (
