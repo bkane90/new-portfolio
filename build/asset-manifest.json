@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5558789.chunk.css",
-    "main.js": "/static/js/main.6bd254bd.chunk.js",
-    "main.js.map": "/static/js/main.6bd254bd.chunk.js.map",
+    "main.css": "/static/css/main.e733f86e.chunk.css",
+    "main.js": "/static/js/main.51089377.chunk.js",
+    "main.js.map": "/static/js/main.51089377.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cb052e48.js",
     "runtime-main.js.map": "/static/js/runtime-main.cb052e48.js.map",
     "static/css/2.c4ff10e7.chunk.css": "/static/css/2.c4ff10e7.chunk.css",
@@ -10,10 +10,10 @@
     "static/js/2.e4e69fc0.chunk.js.map": "/static/js/2.e4e69fc0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.c4ff10e7.chunk.css.map": "/static/css/2.c4ff10e7.chunk.css.map",
-    "static/css/main.a5558789.chunk.css.map": "/static/css/main.a5558789.chunk.css.map",
+    "static/css/main.e733f86e.chunk.css.map": "/static/css/main.e733f86e.chunk.css.map",
     "static/js/2.e4e69fc0.chunk.js.LICENSE.txt": "/static/js/2.e4e69fc0.chunk.js.LICENSE.txt",
     "static/media/BILogo.c197c48a.jpg": "/static/media/BILogo.c197c48a.jpg",
-    "static/media/BackgroundImage.ca04c533.png": "/static/media/BackgroundImage.ca04c533.png",
+    "static/media/index.css": "/static/media/BackgroundImage.ca04c533.png",
     "static/media/BezosBot.22c30a6b.png": "/static/media/BezosBot.22c30a6b.png",
     "static/media/CryptopediaLogo.1e18591e.png": "/static/media/CryptopediaLogo.1e18591e.png",
     "static/media/DHLogo.c2597552.jpg": "/static/media/DHLogo.c2597552.jpg",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.cb052e48.js",
     "static/css/2.c4ff10e7.chunk.css",
     "static/js/2.e4e69fc0.chunk.js",
-    "static/css/main.a5558789.chunk.css",
-    "static/js/main.6bd254bd.chunk.js"
+    "static/css/main.e733f86e.chunk.css",
+    "static/js/main.51089377.chunk.js"
   ]
 }

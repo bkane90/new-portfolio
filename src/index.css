@@ -1,5 +1,9 @@
 body {
-  /* background-image: url("./assets/images/BackgroundImage.png"); */
+  background-color: black;
+  background-image: url("./assets/images/BackgroundImage.png");
+  background-position: ;
+  background-repeat: no-repeat;
+
   margin: 0;
   font-family: 'Rubik', sans-serif;;
   -webkit-font-smoothing: antialiased;
