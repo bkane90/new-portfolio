@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.fd430702.chunk.css",
-    "main.js": "/static/js/main.d4fe38ac.chunk.js",
-    "main.js.map": "/static/js/main.d4fe38ac.chunk.js.map",
+    "main.js": "/static/js/main.c2459522.chunk.js",
+    "main.js.map": "/static/js/main.c2459522.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cb052e48.js",
     "runtime-main.js.map": "/static/js/runtime-main.cb052e48.js.map",
     "static/css/2.c4ff10e7.chunk.css": "/static/css/2.c4ff10e7.chunk.css",
@@ -12,10 +12,12 @@
     "static/css/2.c4ff10e7.chunk.css.map": "/static/css/2.c4ff10e7.chunk.css.map",
     "static/css/main.fd430702.chunk.css.map": "/static/css/main.fd430702.chunk.css.map",
     "static/js/2.e4e69fc0.chunk.js.LICENSE.txt": "/static/js/2.e4e69fc0.chunk.js.LICENSE.txt",
+    "static/media/BILogo.c197c48a.jpg": "/static/media/BILogo.c197c48a.jpg",
     "static/media/BackgroundImage.ca04c533.png": "/static/media/BackgroundImage.ca04c533.png",
     "static/media/BezosBot.22c30a6b.png": "/static/media/BezosBot.22c30a6b.png",
-    "static/media/CryptopediaLogo.1b280098.png": "/static/media/CryptopediaLogo.1b280098.png",
+    "static/media/CryptopediaLogo.1e18591e.png": "/static/media/CryptopediaLogo.1e18591e.png",
     "static/media/MyPhoto.a64ba7d4.png": "/static/media/MyPhoto.a64ba7d4.png",
+    "static/media/NRLogo.c3230c52.png": "/static/media/NRLogo.c3230c52.png",
     "static/media/Tesla.090e7613.png": "/static/media/Tesla.090e7613.png",
     "static/media/boxicons.css": "/static/media/boxicons.cbd149c5.ttf"
   },
@@ -24,6 +26,6 @@
     "static/css/2.c4ff10e7.chunk.css",
     "static/js/2.e4e69fc0.chunk.js",
     "static/css/main.fd430702.chunk.css",
-    "static/js/main.d4fe38ac.chunk.js"
+    "static/js/main.c2459522.chunk.js"
   ]
 }

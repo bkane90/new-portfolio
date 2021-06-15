@@ -2,6 +2,8 @@ import React from 'react';
 
 import Card from './Card';
 
+import NRLogo from '../assets/images/NRLogo.png';
+import BILogo from '../assets/images/BILogo.jpg';
 import CryptopediaLogo from '../assets/images/CryptopediaLogo.png';
 import Tesla from '../assets/images/Tesla.png';
 import BezosBot from '../assets/images/BezosBot.png';
@@ -16,6 +18,22 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
+                    title: 'New Remedies',
+                    subTitle: 'First & Only Federally Compliant CBD Franchise',
+                    imgSrc: NRLogo,
+                    link: 'https://newremediescbd.com/?v=f24485ae434a',
+                    selected: false
+                },
+                {
+                    id: 1,
+                    title: 'Biz Incubate',
+                    subTitle: 'Business Incubator Bridging the Generational Gap',
+                    imgSrc: BILogo,
+                    link: 'https://bizincubate.com/',
+                    selected: false
+                },
+                {
+                    id: 2,
                     title: 'Cryptopedia',
                     subTitle: 'Cryptocurrency Trading Simulator',
                     imgSrc: CryptopediaLogo,
@@ -23,15 +41,15 @@ class Carousel extends React.Component {
                     selected: false
                 },
                 {
-                    id: 1,
+                    id: 3,
                     title: 'Nikola Tesla Electrical Storm Tracker',
-                    subTitle: 'Track Storms using Google Maps API',
+                    subTitle: 'Track Storms Using Google Maps API',
                     imgSrc: Tesla,
                     link: 'https://Nikola-Tesla-electric.netlify.app/',
                     selected: false
                 },
                 {
-                    id: 2,
+                    id: 4,
                     title: 'Bezos World Domination Game',
                     subTitle: 'Futuristic Shooter Game',
                     imgSrc: BezosBot,
