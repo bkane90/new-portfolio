@@ -1,9 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
-
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
 import Hero from '../components/Hero';
 import Content from '../components/Content';
 
@@ -44,7 +42,6 @@ class ContactPage extends React.Component {
         return (
             <div>
                 <Hero title={this.props.title} />
-
                 <Content>
                     <Form className='py-5 my-5 px-0 mx-0'>
                         <Form.Group>

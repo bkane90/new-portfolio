@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Hero(props) {
-
     return (
         <Jumbotron className="bg-transparent jumbotron-fluid p-0 text-center">
             <Container fluid={true}>

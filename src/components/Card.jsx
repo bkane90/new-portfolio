@@ -1,10 +1,7 @@
 import React from 'react';
-
 import CardInfo from './CardInfo';
 
-
 function Card(props) {
-
     return (
         <div className="col-md-3 d-inline-block b-card" onClick={(e) => props.click(props.item)}>
             <img className="b-card-image" src={props.item.imgSrc} alt={props.item.imgSrc} />

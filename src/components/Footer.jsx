@@ -4,11 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'boxicons/css/boxicons.css';
 
-
-
-
 function Footer() {
-
     return (
         <footer className="mt-5 pt-5" bg="light" variant="light">
             <Container fluid={true}>

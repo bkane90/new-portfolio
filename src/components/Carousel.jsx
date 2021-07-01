@@ -12,7 +12,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 class Carousel extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
