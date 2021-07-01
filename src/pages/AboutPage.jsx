@@ -9,9 +9,9 @@ function AboutPage(props) {
     return (
         <div>
             <Hero title={props.title} />
-            <Container fluid={true}>
-                <Row className="justify-content-center p-0">
-                    <img src={MyPhoto} className='pb-5 mb-3 m-0' alt='Me' />
+            <Container fluid={true} id="about-section">
+                <Row className="justify-content-center p-0 m-0">
+                    <img src={MyPhoto} className='pb-5' alt='Me' />
                     <Content>
                         <p>Hey there! I'm Bob Kane, a full-stack web developer based out of Brooklyn, NY with a background in finance and marketing.
                             I'm currently working as a freelance web developer while I pursue my next full-time role. As an Ironhack bootcamp graduate,

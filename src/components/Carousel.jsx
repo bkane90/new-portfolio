@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Card from './Card';
-
 import NRLogo from '../assets/images/NRLogo.png';
 import BILogo from '../assets/images/BILogo.jpg';
 import DHLogo from '../assets/images/DHLogo.jpg';
@@ -68,7 +66,6 @@ class Carousel extends React.Component {
         }
     }
 
-
     handleCardClick = (id, card) => {
 
         let items = [...this.state.items];
@@ -102,7 +99,6 @@ class Carousel extends React.Component {
             </Container>
         );
     }
-
 }
 
 export default Carousel;
