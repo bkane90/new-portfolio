@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Hero from '../components/Hero';
 import Content from '../components/Content';
-import MyPhoto from '../assets/images/MyPhoto.png';
+import Headshot from '../assets/images/Headshot2021.png';
 
 function AboutPage(props) {
     return (
@@ -11,7 +11,7 @@ function AboutPage(props) {
             <Hero title={props.title} />
             <Container fluid={true} id="about-section">
                 <Row className="justify-content-center p-0 m-0">
-                    <img src={MyPhoto} className='pb-5' alt='Me' />
+                    <img src={Headshot} className='pb-5' alt='Me' />
                     <Content>
                         <p>Hey there! I'm Bob Kane, a full-stack web developer based out of Brooklyn, NY with a background in finance and marketing.
                             I'm currently working as a freelance web developer while I pursue my next full-time role. As an Ironhack bootcamp graduate,
