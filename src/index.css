@@ -21,7 +21,7 @@ code {
   border-radius: 52px;
   width: 360px;
   height: 480px;
-  box-shadow: 0px 0px 5px 3px #ccc;
+  box-shadow: 0px 0px 5px 3px rgb(133, 182, 173);
 }
 
 .b-card-info {
@@ -44,7 +44,7 @@ code {
   background-color: rgba(1, 11, 9, 0.85);
   padding: 50px 10px 30px 10px;
   border-radius: 75px;
-  box-shadow: 0px 0px 50px 30px rgb(133, 182, 173);
+  box-shadow: 0px 0px 50px 20px rgb(133, 182, 173);
 }
 
 #form-button {
